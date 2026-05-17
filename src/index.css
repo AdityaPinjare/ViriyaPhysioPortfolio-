@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap");
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+  --clr-navy: #0F2942;
+  --clr-navy-mid: #1A3F63;
+  --clr-navy-soft: #2A5A8C;
+  --clr-gold: #B8935A;
+  --clr-gold-light: #D4AA72;
+  --clr-gold-pale: #F0E4CC;
+  --clr-bg: #F4F7FC;
+  --clr-surface: rgba(255,255,255,0.72);
+  --clr-border: rgba(15,41,66,0.12);
+  --clr-text-heading: #0A2035;
+  --clr-text-body: #2D4A62;
+  --clr-text-muted: #5A7A96;
+  --shadow-card: 0 4px 32px rgba(15,41,66,0.10), 0 1px 4px rgba(15,41,66,0.06);
+  --shadow-hero: 0 30px 80px rgba(15,41,66,0.22);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  background: var(--clr-bg);
+  color: var(--clr-text-body);
+}
+
+.font-serif {
+  font-family: "Cormorant Garamond", Georgia, serif;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection */
+::selection {
+  background: var(--clr-gold-pale);
+  color: var(--clr-navy);
+}
